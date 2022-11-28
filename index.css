@@ -1,0 +1,149 @@
+body {
+    background: #F8F8F8;
+    color: black;
+}
+
+main {
+    padding-top: 5%;
+
+}    
+
+           
+.main_titulo {
+    text-align: center;
+
+}
+   
+.img{
+    padding-left: 20%;
+    padding-right: 10%;
+
+} 
+.navegação_botao_1:hover{
+    transition: 0.5s;
+    background-color: green;
+}
+.navegação_botao_2:hover{
+    transition: 0.5s;
+    background-color: green;  
+}
+.navegação_botao_3:hover{
+    transition: 0.5s;
+    background-color: green;
+}
+.navegação_botao_1 {
+    background-color:#D9BF77;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navegação_botao_2 {
+    background: #D9BF77;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navegação_botao_3 {
+    background: #D9BF77;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.quem_somos{
+    background: blue;
+}
+
+.foot .logo{
+    width: 62px;
+
+}
+.foot .div_foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.foot .div_uvv{
+    position: absolute;
+    padding-top: 4%;
+    padding-right: 90%;
+}
+.foot .title{
+    font-size: 25px;
+    font-family: 'fonte_footer';
+    font-weight: normal;
+    color: darkgreen;
+    text-decoration: underline;
+}
+.foot .tp_uvv{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    width: 175px;
+    padding: 5%;
+
+}
+.header,
+.navegação_botões{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header{
+    background: #639A67;
+    box-shadow: 1px 1px 4px #272727;
+    height: 65px;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+} 
+.navegação_botões{
+    gap: 3em;
+    margin: 23px;
+    padding: 5%;
+}
+
+.ativo{
+    box-shadow: 4px 4px 4px #272727;
+}
+*{
+    margin: 0;
+    
+}
+.botão_icone_header_menor{
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: 768px){
+    .botão_icone_header_menor{
+        display: block;
+    }
+    .navegação_botões{
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: #639A67;
+        height: 10000%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+
+}
+@keyframes showSidebar {
+    from {margin-left: -100vw}
+    top {margin-left: -7vw}
+}
+@font-face {
+    font-family: 'fonte_footer' ;
+    src: url('aAbstractGroovy.otf') format('opentype'),
+    url('aAbstractGroovy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
